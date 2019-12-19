@@ -1,5 +1,5 @@
 ﻿<#
-    Developed by MITIGANT, INC.
+    Developed by sysadmins-admin
 
     This script can be modified as you see fit.
     Please feel free to redistribute and/or use any part or all of the code.
@@ -133,5 +133,5 @@ function handler1(){
 handler1
 
 <#
-    Developed by MITIGANT, INC.
+    Developed by sysadmins-admin.
 #>
