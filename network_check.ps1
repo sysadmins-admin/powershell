@@ -1,4 +1,6 @@
-﻿# Checks network activity to catch possibly malicious callbacks (SYN_SENT, CLOSE, FIN, etc.) every 10 seconds
+﻿# Devloped by sysadmins-admin
+
+# Checks network activity to catch possibly malicious callbacks (SYN_SENT, CLOSE, FIN, etc.) every 10 seconds
 # Although these may not be complete or attributing threat vectors, they can indicate possible unauthorized network/infrastructure usage
 # This approach is similar to IPv6 ACLs 
 
@@ -26,3 +28,5 @@ while($i -lt $SecondsToStop){
     $counter++ # Increment the counter
     $i++ # Increment the iterator
 }
+  
+# Devloped by sysadmins-admin
