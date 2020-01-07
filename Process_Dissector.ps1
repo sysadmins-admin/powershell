@@ -66,7 +66,7 @@ function print_report($message1){
            $Timestamp = "Report printed on: $Date"
 
            #Timestamp document
-           $Timestamp | Out-File -Append "C:\Users\Owner\Desktop\Investigate\$proc_name1-eval.txt"
+           $Timestamp | Out-File -Append "C:\Users\Bob\Desktop\Investigate\$proc_name1-eval.txt"
 
            ############Establishing variables to be written to file ############
            
@@ -103,35 +103,35 @@ function print_report($message1){
            ############ End of establishing variables to be written to file ############
 
               #Process startime
-              $BlankSpace >> "C:\Users\Owner\Desktop\Investigate\$proc_name1-eval.txt" 
-              $StartTime >> "C:\Users\Owner\Desktop\Investigate\$proc_name1-eval.txt" # Add start-time to file
+              $BlankSpace >> "C:\Users\Bob\Desktop\Investigate\$proc_name1-eval.txt" 
+              $StartTime >> "C:\Users\Bob\Desktop\Investigate\$proc_name1-eval.txt" # Add start-time to file
 
               #Process handles
-              $BlankSpace >> "C:\Users\Owner\Desktop\Investigate\$proc_name1-eval.txt" 
-              $Handles >> "C:\Users\Owner\Desktop\Investigate\$proc_name1-eval.txt" # Add handle count to file
+              $BlankSpace >> "C:\Users\Bob\Desktop\Investigate\$proc_name1-eval.txt" 
+              $Handles >> "C:\Users\Bob\Desktop\Investigate\$proc_name1-eval.txt" # Add handle count to file
 
               #Associated Threads
-              $BlankSpace >> "C:\Users\Owner\Desktop\Investigate\$proc_name1-eval.txt"
-              $Threads >> "C:\Users\Owner\Desktop\Investigate\$proc_name1-eval.txt"  # List threads associated with process
-              $AssocThreads >> "C:\Users\Owner\Desktop\Investigate\$proc_name1-eval.txt"
+              $BlankSpace >> "C:\Users\Bob\Desktop\Investigate\$proc_name1-eval.txt"
+              $Threads >> "C:\Users\Bob\Desktop\Investigate\$proc_name1-eval.txt"  # List threads associated with process
+              $AssocThreads >> "C:\Users\Bob\Desktop\Investigate\$proc_name1-eval.txt"
 
               #Process Filepath
-              $BlankSpace >> "C:\Users\Owner\Desktop\Investigate\$proc_name1-eval.txt"
-              $FilePath >> "C:\Users\Owner\Desktop\Investigate\$proc_name1-eval.txt" # Displays full path
+              $BlankSpace >> "C:\Users\Bob\Desktop\Investigate\$proc_name1-eval.txt"
+              $FilePath >> "C:\Users\Bob\Desktop\Investigate\$proc_name1-eval.txt" # Displays full path
 
               # Associate process with dll(s) it may be accessing              
-              $BlankSpace >> "C:\Users\Owner\Desktop\Investigate\$proc_name1-eval.txt"
-              $FoundDlls >> "C:\Users\Owner\Desktop\Investigate\$proc_name1-eval.txt"
-              $Modules >> "C:\Users\Owner\Desktop\Investigate\$proc_name1-eval.txt"
+              $BlankSpace >> "C:\Users\Bob\Desktop\Investigate\$proc_name1-eval.txt"
+              $FoundDlls >> "C:\Users\Bob\Desktop\Investigate\$proc_name1-eval.txt"
+              $Modules >> "C:\Users\Bob\Desktop\Investigate\$proc_name1-eval.txt"
               
               #Locate thread count bound to specific CPUs
-              $BlankSpace >> "C:\Users\Owner\Desktop\Investigate\$proc_name1-eval.txt"
-              $ResourceCache >> "C:\Users\Owner\Desktop\Investigate\$proc_name1-eval.txt" # Additional test to check if payload is attempting to deadlock processors
+              $BlankSpace >> "C:\Users\Bob\Desktop\Investigate\$proc_name1-eval.txt"
+              $ResourceCache >> "C:\Users\Bob\Desktop\Investigate\$proc_name1-eval.txt" # Additional test to check if payload is attempting to deadlock processors
               
               # Determines how resource intensive or resource privileged the process is. If resource value is 'True', then
               # the process exhibits resource intensive behavior 
-              $BlankSpace >> "C:\Users\Owner\Desktop\Investigate\$proc_name1-eval.txt"
-              $PrivCheck >> "C:\Users\Owner\Desktop\Investigate\$proc_name1-eval.txt"   # Checks to see how resource intensive process is
+              $BlankSpace >> "C:\Users\Bob\Desktop\Investigate\$proc_name1-eval.txt"
+              $PrivCheck >> "C:\Users\Bob\Desktop\Investigate\$proc_name1-eval.txt"   # Checks to see how resource intensive process is
               
               menu("The enumeration of '$proc_name1' has been printed to file.") -ErrorAction SilentlyContinue # Return to main menu
               
