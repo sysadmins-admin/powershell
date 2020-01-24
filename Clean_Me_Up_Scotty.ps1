@@ -6,7 +6,7 @@
 
     Remember you are the GURU!
 
-    The Purpose of this program is to provide a minimalistic approach to checkin often forgotten 
+    The Purpose of this program is to provide a minimalistic approach to checking often forgotten 
     tasks for quick reference to be used. This script may also provide use function plugins for 
     enumeration purposes.
 
